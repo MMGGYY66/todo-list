@@ -7,15 +7,11 @@
 
 # 📗 Table of Contents
 
-- [todo-list](#todo-list)
-- [📗 Table of Contents](#-table-of-contents)
 - [📖 \[🎯 todo-list ](#-todo-list)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [🚀 Live Demo ](#-live-demo-)
   - [👁 Presentation ](#-presentation-)
-- [creating todo-list:](#creating-todo-list)
-  - [🛠 Built With ](#-built-with--1)
   - [Deploy my website with github pages":](#deploy-my-website-with-github-pages)
   - [- Loom video link:](#-loom-video-link)
   - [💻 Getting Started ](#-getting-started-)
@@ -25,45 +21,20 @@
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [👋 Show your support ](#show-your-support)
   - [🔭Acknowledgments ](#acknowledgments-)
   - [📝 License ](#license)
 
 <!-- PROJECT DESCRIPTION -->
-# 📖 [🎯 todo-list <a name="about-project"></a>
 
-In this project, I will build a simple HTML list of To Do tasks. The list will be styled according to the specifications listed later in this lesson. This simple web page will be built using webpack and served by a webpack dev server.
+# 📖 To Do List <a name="about-project"></a>
 
-> Project requirements
+**To Do List** is a web page where the user can see a list of todos, they can also add or remove any todo to the list.
 
-    Set up a new project with webpack that is based on the webpack exercise you have already completed.
-    Create an index.html file and write your HTML markup here. Create an empty To Do List placeholder (<div> or <ul> element). The index.html file must be set as a template using the HTML Webpack Plugin.
-    Create an index.js file and set an array of some simple to do tasks (array of objects). Each task object should contain three keys:
-        description [string].
-        completed [bool].
-        index: [number].
-    Write a function to iterate over the tasks array and populate an HTML list item element for each task.
-    On page load render the dynamically created list of tasks in the dedicated placeholder. The list should appear in order of the index values for each task.
-    Create a style.css and set rules for the To Do List.
 
 ## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 👁 Presentation <a name="presentation"></a>
-
-- [Loom presentation Link]()
-
-# creating todo-list:
-
-
 ## 🛠 Built With <a name="built-with"></a>
 
 <details>
@@ -79,6 +50,47 @@ In this project, I will build a simple HTML list of To Do tasks. The list will b
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://html.com/">Html</a></li>
+  </ul>
+  <ul>
+    <li><a href="hhttps://www.w3schools.com/css/">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="#">N/A</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">LocalStorage</a></li>
+  </ul>
+</details>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👁 Presentation <a name="presentation"></a>
+
+- [Loom presentation Link]()
+
+
 
 ## Deploy my website with github pages":
 
@@ -156,10 +168,15 @@ For stylelint error run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code>
 - Twitter: [twitter](https://twitter.com/MOHAMEDELDIMARd)
 - Facebook: [facebook](https://www.facebook.com/MOHAMED.ELDIMARDASH/)
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] Add local storage to save todos
+- [ ] Add functionality to add and remove todos
+
 
   <!-- CONTRIBUTING -->
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -177,9 +194,24 @@ Give a ⭐️ if you like this project!
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🔭Acknowledgments <a name="acknowledgements"></a>
-
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 - [Microverse Team](https://www.microverse.org/).
+
+I would like to thank Microverse for the information provided to build this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+- **Can I use the project for any purpose?**
+
+  - Yes, you can use this files for anything you need.
+
+- **Is the information saved in any database?**
+
+  - No, all data is saved in Local Storage.
 
 
 ## 📝 License <a name="license"></a>
