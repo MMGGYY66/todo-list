@@ -1,5 +1,5 @@
 function generatetodo() {
-  console.log("todo");
+  console.log("todo list");
 }
 
 export default generatetodo
