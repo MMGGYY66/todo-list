@@ -1,32 +1,31 @@
 // Todo APP
-import generatetodo from './generatetodo'
 import './styles/main.scss'
 
 import Edit from './ellipsis-vertical.svg';
 import Refresh from './rotate.svg';
 import Enter from './enter.png';
 
-const list = document.getElementById('list');
+const todoslist = document.getElementById('todoslist');
 
-const arr = [
+const todoList = [
   {
-    description: 'Lorem, ipsum dolor 11',
-    completed: false,
+    description: 'Clean my house',
+    completed: true,
     index: 11,
   },
   {
-    description: 'Lorem, ipsum dolor 2',
-    completed: true,
+    description: 'Finish my today project',
+    completed: false,
     index: 2,
   },
   {
-    description: 'Lorem, ipsum dolor 1',
-    completed: false,
+    description: 'Have some fun with my kids',
+    completed: true,
     index: 1,
   },
 ];
 
-const appendToDOM = (todo) => {
+const displayTodos = (todo) => {
   const element = document.createElement('li');
   const editIcon = new Image();
   editIcon.src = Edit;
@@ -40,14 +39,14 @@ const appendToDOM = (todo) => {
   </label
   `;
   element.appendChild(editIcon);
-  list.appendChild(element);
+  todoslist.appendChild(element);
 };
 
 const loadElements = () => {
-  arr
+  todoList
     .sort((a, b) => a.index - b.index)
     .forEach((todo) => {
-      appendToDOM(todo);
+      displayTodos(todo);
     });
 };
 
@@ -70,8 +69,3 @@ window.onload = () => {
   loadRefreshBtn();
   loadEnterBtn();
 };
-
-const todoBtn = document.getElementById('todoBtn')
-todoBtn.addEventListener('click', generatetodo)
-
-generatetodo()
