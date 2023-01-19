@@ -51,7 +51,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Todo list',
       filename: 'index.html',
-      template: 'src/template.html',
+      template: 'src/index.html',
     }),
     new BundleAnalyzerPlugin(),
   ],

@@ -8,6 +8,10 @@
     "deploy": "gh-pages -d dist",
     "dev": "webpack serve"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://mmggyy66.github.io/todo-list/"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,6 +21,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
@@ -27,7 +32,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "axios": "^0.26.1",
-    "gh-pages": "^4.0.0"
+    "axios": "^0.26.1"
   }
 }

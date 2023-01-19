@@ -81,7 +81,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://mmggyy66.github.io/todo-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +93,7 @@
 
 ## Deploy my website with github pages":
 
-[link to todo-list: ]()
+[link to todo-list: ](https://mmggyy66.github.io/todo-list/)
 
 ## - Loom video link:
 
