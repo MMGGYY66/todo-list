@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-	background: #f5f5f5;
-	font-family: Arial, sans-serif;
-	color: #333;
+	background: #1d0404;
+	font-family: Roboto, sans-serif;
+	color: rgb(65, 15, 15);
 	height: 100%;
 	width: 100%;
 	font-size: 1rem;
 }
 
 main {
-	margin: 5rem 3rem;
-	background: #fff;
-	border-radius: 2px;
-	box-shadow: 10px 5px 5px #d5d5d5;
+	margin: 5rem 5rem;
+	background: rgb(242, 235, 235);
+	border-radius: 20px 20px 0 0;
+	box-shadow: 10px 10px 20px #f6c5c5;
 	border: 1px solid #d5d5d5;
 }
 
 main > h1 {
-	font-weight: normal;
+	font-weight: bold;
 	padding: 1.5rem;
 	margin: 0;
 	border-bottom: 1px solid #d5d5d5;
@@ -31,6 +31,7 @@ main > h1 {
 	justify-content: space-between;
 	border-bottom: 1px solid #d5d5d5;
 	align-items: center;
+	background: #856363;
 	padding-right: 1.5rem;
 }
 
@@ -40,7 +41,10 @@ main > h1 {
 	margin-right: 1.5rem;
 	font-size: 1.5rem;
 	font-style: italic;
+	background: #937272;
+	color: white;
 	padding: 1.5rem;
+	font-size: 1.9rem;
 	border: none;
 	width: 100%;
 }
@@ -65,23 +69,27 @@ ul > li {
 ul > li > label {
 	display: flex;
 	gap: 1.5rem;
+	font-size: 2rem;
 }
 
 .checkbox {
-	height: 1rem;
-	width: 1rem;
+	height: 2rem;
+	width: 2rem;
 	margin: 0;
 }
 
 footer {
-	background: #f5f5f5;
+	background: #5c3434;
 	padding: 1.5rem;
 	display: flex;
+	font-size: 2rem;
 	justify-content: center;
 }
 
 footer > a {
 	text-decoration: none;
+	color: rgb(242, 239, 237);
+	font-weight: bold;
 	color: #888;
 }
 
@@ -91,4 +99,32 @@ footer > a {
 
 .icon {
 	height: 1rem;
+}
+
+.edit-todo-form {
+  background: lightyellow;
+  padding: 1.5rem;
+  border-bottom: 1px solid #d5d5d5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-todo-form > label {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.edit-todo-input {
+  border: none;
+  background: lightyellow;
+	font-size: 2rem;
+}
+
+.edit-todo-input:focus {
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+	font-size: 2rem;
 }

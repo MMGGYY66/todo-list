@@ -1,52 +1,21 @@
 // Todo APP
 import './styles/main.scss'
-
-import Edit from './ellipsis-vertical.svg';
 import Refresh from './rotate.svg';
 import Enter from './enter.png';
-
-const todoslist = document.getElementById('todoslist');
-
-const todoList = [
-  {
-    description: 'Clean my house',
-    completed: true,
-    index: 11,
-  },
-  {
-    description: 'Finish my today project',
-    completed: false,
-    index: 2,
-  },
-  {
-    description: 'Have some fun with my kids',
-    completed: true,
-    index: 1,
-  },
-];
-
-const displayTodos = (todo) => {
-  const element = document.createElement('li');
-  const editIcon = new Image();
-  editIcon.src = Edit;
-  editIcon.setAttribute('class', 'icon');
-
-  element.setAttribute('id', todo.index);
-  element.innerHTML = `
-  <label>
-    <input class="checkbox" type="checkbox" ${todo.completed ? 'checked' : ''}/>
-    <span>${todo.description}</span>
-  </label
-  `;
-  element.appendChild(editIcon);
-  todoslist.appendChild(element);
-};
+import { appendToDOM } from './modules/handleDOM.js';
+import createShowElement from './modules/showTodo.js';
+import { getData } from './modules/data.js';
+import { newTodoForm, newTodoFormHandler } from './modules/newTodoForm.js';
+import clearAllCompletedHandler from './modules/clearAllCompletedHandler.js';
 
 const loadElements = () => {
-  todoList
+  let todoArray = [];
+  todoArray = getData();
+  todoArray
     .sort((a, b) => a.index - b.index)
     .forEach((todo) => {
-      displayTodos(todo);
+      const todoElement = createShowElement(todo);
+      appendToDOM(todoElement);
     });
 };
 
@@ -64,8 +33,21 @@ const loadEnterBtn = () => {
   enterBtn.setAttribute('class', 'icon');
 };
 
+const loadClearAllCompletedLink = () => {
+  const footer = document.getElementsByTagName('footer')[0];
+  const clearAllCompletedLink = document.createElement('a');
+  clearAllCompletedLink.setAttribute('id', 'clear-all-completed');
+  clearAllCompletedLink.setAttribute('href', '/');
+  clearAllCompletedLink.innerText = 'Clear all completed';
+  clearAllCompletedLink.addEventListener('click', clearAllCompletedHandler);
+  footer.appendChild(clearAllCompletedLink);
+};
+
 window.onload = () => {
   loadElements();
   loadRefreshBtn();
   loadEnterBtn();
+  loadClearAllCompletedLink();
+  newTodoForm.addEventListener('submit', newTodoFormHandler);
 };
+
