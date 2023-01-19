@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "deploy": "gh-pages -d dist",
     "dev": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://mmggyy66.github.io/todo-list/",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -25,6 +27,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "^0.26.1",
+    "gh-pages": "^4.0.0"
   }
 }
