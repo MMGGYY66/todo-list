@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://mmggyy66.github.io/todo-list/",
+  "homepage": "https://mmggyy66.github.io/todo-list/dist/index.html",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
